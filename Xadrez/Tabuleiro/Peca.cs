@@ -9,17 +9,22 @@ namespace tabuleiro
         public int qtdeMovimentos { get; protected set; }
         public Tabuleiro tab { get; protected set; }
 
-        public Peca(Tabuleiro tabuleiro, Cor cor)
+        public Peca(Tabuleiro tab, Cor cor)
         {
             this.posicao = null;
+            this.tab = tab;
             this.cor = cor;
-            this.tab = tabuleiro;
             this.qtdeMovimentos = 0;
         }
 
         public void incrementaQtdeMovimentos()
         {
             qtdeMovimentos ++;
+        }
+
+        public void decrementaQtdeMovimentos()
+        {
+            qtdeMovimentos--;
         }
 
         public bool existeMovimentosPossiveis()
