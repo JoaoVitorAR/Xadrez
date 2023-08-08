@@ -60,7 +60,7 @@ namespace xadrez
                 }
 
                 // #jogadaespecial en passant
-                /*if (posicao.linha == 3)
+                if (posicao.linha == 3)
                 {
                     Posicao esquerda = new Posicao(posicao.linha, posicao.coluna - 1);
                     if (tab.posicaoValida(esquerda) && existeInimigo(esquerda) && tab.peca(esquerda) == partida.vulneravelEnPassant)
@@ -72,7 +72,7 @@ namespace xadrez
                     {
                         mat[direita.linha - 1, direita.coluna] = true;
                     }
-                }*/
+                }
             }
             else
             {
@@ -99,7 +99,7 @@ namespace xadrez
                 }
 
                 // #jogadaespecial en passant
-                /*if (posicao.linha == 4)
+                if (posicao.linha == 4)
                 {
                     Posicao esquerda = new Posicao(posicao.linha, posicao.coluna - 1);
                     if (tab.posicaoValida(esquerda) && existeInimigo(esquerda) && tab.peca(esquerda) == partida.vulneravelEnPassant)
@@ -111,7 +111,7 @@ namespace xadrez
                     {
                         mat[direita.linha + 1, direita.coluna] = true;
                     }
-                }*/
+                }
             }
 
             return mat;
