@@ -1,5 +1,4 @@
-﻿using System.Net.Security;
-using tabuleiro;
+﻿using tabuleiro;
 using xadrez;
 
 namespace Xadrez
